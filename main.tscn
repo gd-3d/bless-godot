@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://da3cy07sdmdbm"]
+
+[ext_resource type="PackedScene" uid="uid://5lx5e5uuj0qa" path="res://collisions_test.gltf" id="1_bxcn7"]
+
+[node name="Node" type="Node"]
+
+[node name="collisions_test" parent="." instance=ExtResource("1_bxcn7")]
+
+[node name="Point" parent="collisions_test/Scene Collection/main" index="0"]
+light_energy = 1.009
+omni_range = 27.132
+
+[editable path="collisions_test"]

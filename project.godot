@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="bless-godot"
+config/version="0.1"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[bless]
+
+project_uuid="049b1743-eaf9-419d-aa7e-e23864dfdc4e"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/bless/plugin.cfg")
+
+[layer_names]
+
+3d_physics/layer_1="geometry"
+3d_physics/layer_2="characters"
