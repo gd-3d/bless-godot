@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwberk16qlcm3"]
+
+[ext_resource type="Script" path="res://addons/utilities/bless/dock/bless_dock.gd" id="1_pn2qj"]
+
+[node name="BlessDock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pn2qj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Bless Profile Generator"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ProfilePathLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Profile Path:"
+
+[node name="ProfilePath" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+text = "res://addons/utilities/bless/profiles/game_profile.tres"
+placeholder_text = "Path to profile resource"
+
+[node name="OutputPathLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Output Path:"
+
+[node name="OutputPath" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+text = "res://game_profile.json"
+placeholder_text = "Path for output JSON"
+
+[node name="GenerateButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Generate Profile JSON"
+
+[connection signal="pressed" from="VBoxContainer/GenerateButton" to="." method="_on_generate_pressed"]

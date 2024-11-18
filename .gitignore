@@ -1,8 +1,0 @@
-# Godot 4+ specific ignores
-.godot/
-android/
-
-# System/tool-specific ignores
-.DS_store
-.directory
-*~
