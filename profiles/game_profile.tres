@@ -1,12 +1,13 @@
-[gd_resource type="Resource" script_class="BlessProfile" load_steps=2 format=3 uid="uid://krjx1tt80mnv"]
+[gd_resource type="Resource" script_class="BlessProfile" load_steps=3 format=3 uid="uid://krjx1tt80mnv"]
 
-[ext_resource type="Script" path="res://addons/utilities/bless/bless_profile.gd" id="1_qyqnf"]
+[ext_resource type="Script" path="res://addons/liblast_framework/entity/geometry/mover.gd" id="1_1yw8u"]
+[ext_resource type="Script" path="res://addons/bless-godot/bless_profile.gd" id="1_qyqnf"]
 
 [resource]
 script = ExtResource("1_qyqnf")
 game = "Liblast"
 game_engine = "Godot Engine"
-classes = Array[GDScript]([])
+classes = Array[GDScript]([ExtResource("1_1yw8u")])
 scenes = Array[PackedScene]([])
 audio_music = Array[String](["res://addons/liblast_framework/data/audio/music"])
 audio_sfx = Array[String](["res://addons/liblast_framework/data/audio/sfx"])

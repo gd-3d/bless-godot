@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dwberk16qlcm3"]
 
-[ext_resource type="Script" path="res://addons/utilities/bless/dock/bless_dock.gd" id="1_pn2qj"]
+[ext_resource type="Script" path="res://addons/bless-godot/dock/bless_dock.gd" id="1_pn2qj"]
 
 [node name="BlessDock" type="Control"]
 layout_mode = 3
