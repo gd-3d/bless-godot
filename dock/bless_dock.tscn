@@ -32,7 +32,7 @@ text = "Profile Path:"
 
 [node name="ProfilePath" type="LineEdit" parent="VBoxContainer"]
 layout_mode = 2
-text = "res://addons/utilities/bless/profiles/game_profile.tres"
+text = "res://game_profile.tres"
 placeholder_text = "Path to profile resource"
 
 [node name="OutputPathLabel" type="Label" parent="VBoxContainer"]
